@@ -13,14 +13,15 @@
 
     python src/main.py
 
-## Пример работы
-
+### Пример работы
+```
 myvfs> ls test
 ls: аргументы: ['test']
 myvfs> foo
 foo: команда не найдена
 myvfs> exit
 Выход из эмулятора
+```
 
 ## Этап 2: Конфигурация
 
@@ -35,3 +36,13 @@ myvfs> exit
     python src/main.py --vfs-path vfs/test.zip --script scripts/start_ok.txt
 
 Тестовые скрипты ОС лежат в папке `scripts/` (`*.bat`).
+
+### Пример: скрипт с ошибкой
+
+```
+myvfs> ls
+ls: аргументы: []
+myvfs> foo аргумент
+foo: команда не найдена
+Ошибка в скрипте 'scripts\start_error.txt', строка 3: foo аргумент
+```
