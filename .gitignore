@@ -1,5 +1,32 @@
-.idea/
+# Служебные файлы Python
 __pycache__/
-*.pyc
-venv/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Виртуальные окружения
 .venv/
+venv/
+env/
+
+# Артефакты сборки
+build/
+dist/
+
+# Настройки редакторов
+.idea/
+.vscode/
+*.swp
+
+# Мусор операционных систем
+Thumbs.db
+.DS_Store
+
+# Архивы
+*.zip
+*.tar
+*.gz
+*.7z
